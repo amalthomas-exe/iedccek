@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Prompt', sans-serif;
+    background: url("../images/cover.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#landing{
+    width: 100%;
+    height: 100vh;
+}
+
+#nav{
+    width:100%;
+    height: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar{
+    padding: 0.7em;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.397);
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link-item{
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 2px 10px;
+    height: 100%;
+}
+
+
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-logo-text{
+    font-size: 7px;
+}
+#nav-logo-main{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav-link-item:hover{
+    background-color: rgba(204, 130, 33, 0.541);
+    color: rgb(255, 255, 255);
+}
+
+#landing{
+    width: 100%;
+    height: 100vh;
+}
+
+#landing-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#title{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    background-color: rgba(104, 105, 105, 0.479);
+}
+
+.text-large{
+    font-size: 80px;
+}
+
+.text-small{
+    font-size: 20px;
+}
+
+#main-section{
+    overflow: hidden;
+    background: url("../images/main-cover.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height:100vh; 
+}
+#main-section-contents{
+    padding: 0.5em;
+    background-color:rgba(255, 255, 255, 0.61);
+}
+
+.text-mid{
+    font-size: 35px;
+}
+
+#about-title{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1em;
+}
+
+#about-text{
+    text-align: center;
+}
+@media(max-width:600px){
+
+    .nav-links{
+        display: none;
+    }
+
+    #navbar{
+        align-items: center;
+        justify-content: center;
+    }
+
+    #title{
+        width:80%
+    }
+    
+    .text-large{
+        font-size: px;
+    }
+
+    .text-small{
+        font-size: 17px;
+    }
+}
